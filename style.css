@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #0d0d0d;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    padding: 20px 0;
+    border-bottom: 1px solid #222;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.hero {
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, rgba(0,0,0,.85), rgba(0,0,0,.4)),
+    url('https://images.unsplash.com/photo-1605559424843-9e2f8c0f86f4') center/cover no-repeat;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 600px;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 15px 35px;
+    background: #c9a24d;
+    color: #000;
+    font-weight: 600;
+    display: inline-block;
+}
+
+section {
+    padding: 80px 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* GRID SYSTEM */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+/* CARDS */
+.card {
+    background: #141414;
+    padding: 30px;
+    border: 1px solid #222;
+}
+
+/* GALLERY */
+.gallery img {
+    width: 100%;
+    border: 2px solid #222;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    border-color: #c9a24d;
+}
+
+/* PACKAGES */
+.package.gold {
+    border: 2px solid #c9a24d;
+}
+
+/* BOOKING */
+.booking-box {
+    background: #141414;
+    border: 2px solid #c9a24d;
+    padding: 40px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.booking-box a {
+    color: #c9a24d;
+    font-weight: 600;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid #222;
+    color: #777;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+}
+footer i {
+    font-size: 20px;
+    color: #c9a24d;
+    transition: 0.3s;
+}
+
+footer i:hover {
+    color: #ffffff;
+}
+.floating-socials {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 1000;
+}
+
+.floating-socials a {
+    width: 45px;
+    height: 45px;
+    background: #141414;
+    border: 2px solid #c9a24d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.floating-socials i {
+    color: #c9a24d;
+    font-size: 18px;
+}
+
+.floating-socials a:hover {
+    background: #c9a24d;
+}
+
+.floating-socials a:hover i {
+    color: #000;
+}
+.follow-label {
+    color: #c9a24d;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+}
